@@ -13,7 +13,7 @@ const invalid = '2px solid red';
 //funktionerne
 const validateName = () => {
   const str = myName.value;
-  const test = /^[^\d]+$/;
+  const test = /^[A-Za-z|æøå|ÆØÅ]{2,12}$/;
   if (str.length >= 2 && test.test(str)) {
     myName.style.border = valid;
   } else {
